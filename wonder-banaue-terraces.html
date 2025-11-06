@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Banaue Rice Terraces - Wonders of the Philippines</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .glass-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: white;
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .wonder-image {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        .map-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+            background: white;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="glass-header d-flex justify-content-center align-items-center position-relative">
+        <a href="index.html#wonders" class="text-white text-decoration-none position-absolute start-0 ms-3"
+            style="font-size: 1.4rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-house"
+                viewBox="0 0 16 16">
+                <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+            </svg>
+        </a>
+
+        Banaue Rice Terraces
+    </div>
+    <section class="container py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <h3 class="fw-bold mb-3">About Banaue Rice Terraces</h3>
+                <p>
+                    The Banaue Rice Terraces, located in the mountains of Ifugao province in northern Luzon,
+                    are often referred to as the “Eighth Wonder of the World.” Carved by hand into the
+                    Cordillera mountain slopes more than 2,000 years ago, these terraces were built by the
+                    Ifugao people using only simple tools and indigenous engineering methods.
+                </p>
+                <p>
+                    The terraces continue to be used for rice and vegetable farming today, sustained by a
+                    centuries-old irrigation system that channels water from nearby rainforests. They are a
+                    living cultural landscape — a testament to the skill, resilience, and tradition of the
+                    Ifugao communities who still inhabit the area.
+                </p>
+                <ul>
+                    <li><strong>Location:</strong> Ifugao, Cordillera Region, Luzon</li>
+                    <li><strong>Altitude:</strong> Up to 1,500 meters above sea level</li>
+                    <li><strong>Known For:</strong> 2,000-year-old hand-carved rice terraces</li>
+                    <li><strong>Best Time to Visit:</strong> April - May (green terraces) / June (harvest season)</li>
+                </ul>
+            </div>
+            <div class="col-lg-6">
+                <div id="banaueCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#banaueCarousel" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#banaueCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#banaueCarousel" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner rounded shadow-lg">
+                        <div class="carousel-item active">
+                            <img src="images/rice-terraces.jpg" class="d-block w-100 wonder-image"
+                                alt="Banaue Rice Terraces 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/rice-terraces-2.jpeg" class="d-block w-100 wonder-image"
+                                alt="Banaue Rice Terraces 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/rice-terraces-3.jpg" class="d-block w-100 wonder-image"
+                                alt="Banaue Rice Terraces 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#banaueCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#banaueCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+
+
+            <!-- Map -->
+            <div class="mt-5">
+                <h4 class="fw-bold mb-3">Location Map</h4>
+                <div class="map-card">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.8649439627025!2d121.05271188441277!3d16.93195294231447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339029cc257489c3%3A0x67585763fe71abd!2sBanaue%20Rice%20Terraces!5e0!3m2!1sen!2sph!4v1762152603123!5m2!1sen!2sph"
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
