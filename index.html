@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Philippines</title>
+    <title>Philippines</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
@@ -121,42 +121,57 @@
             position: relative;
             height: 100vh;
             overflow: hidden;
-            margin-top: -100px;
+            margin-top: -60px;
             z-index: 0;
         }
 
         .ph-page .position-sticky {
             z-index: 5;
         }
+
+        @media (max-width: 991.98px) {
+            #phNavbar {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.25);
+                backdrop-filter: blur(10px);
+                z-index: 1050;
+            }
+        }
+        
+        
     </style>
 </head>
 
 <body class="ph-page" data-bs-spy="scroll" data-bs-target=".ph-nav" data-bs-offset="150" tabindex="0">
 
-    <nav class="navbar navbar-expand-lg position-sticky top-0 w-100 z-3">
-        <div class="card my-2 py-4 px-5 rounded-5 glass d-flex flex-row justify-content-between align-items-center flex-wrap mx-3 w-100">
-            <a class="navbar-brand mb-0 h5">Philippines</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#phNavbar"
-                aria-controls="phNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="phNavbar">
-                <ul class="navbar-nav ph-nav">
-                    <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#history">History</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#wonders">Wonders</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#flavors">Flavors</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#visitus">Visit Us</a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg sticky-top glass" style="z-index: 1050; padding: 0.75rem 1.5rem;">
+    <div class="container d-flex justify-content-between align-items-center">
+        <a class="navbar-brand mb-0 h5">Philippines</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#phNavbar"
+            aria-controls="phNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse ph-navbar-collapse" id="phNavbar">
+            <ul class="navbar-nav ms-auto ph-nav">
+                <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="#overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="#history">History</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="#wonders">Wonders</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="#flavors">Flavors</a></li>
+                <li class="nav-item"><a class="nav-link text-white px-3 py-2" href="#visitus">Visit Us</a></li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
 
     <!-- Home section -->
-    <section id="home" class="home position-relative" style="height: 80vh; overflow: hidden;">
+    <section id="home" class="home position-relative" style="height: 100vh; overflow: hidden;">
         <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover">
-            <source src="philippines-video.mp4" type="video/mp4">
+            <source src="philippinesvideo.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
 
@@ -262,9 +277,8 @@
             <div class="row g-4 mb-4">
                 <div class="col-md-4">
                     <div class="card shadow-sm h-100">
-                        <img src="images/spanish.jpg" class="card-img-top" 
-                        style="height: 220px; width: 100%; object-fit: cover;"
-                        alt="Spanish Colonization">
+                        <img src="images/spanish.jpg" class="card-img-top"
+                            style="height: 220px; width: 100%; object-fit: cover;" alt="Spanish Colonization">
                         <div class="card-body text-center">
                             <h5 class="card-title">1565-1898</h5>
                             <p class="card-subtitle mb-2">Spanish Colonization</p>
@@ -276,9 +290,8 @@
 
                 <div class="col-md-4">
                     <div class="card shadow-sm h-100">
-                        <img src="images/revolution.jpg" class="card-img-top" 
-                        style="height: 220px; width: 100%; object-fit: cover;"
-                        alt="Philippine Revolution">
+                        <img src="images/revolution.jpg" class="card-img-top"
+                            style="height: 220px; width: 100%; object-fit: cover;" alt="Philippine Revolution">
                         <div class="card-body text-center">
                             <h5 class="card-title">1896-1898</h5>
                             <p class="card-subtitle mb-2">Revolution & Independence</p>
@@ -290,9 +303,8 @@
 
                 <div class="col-md-4">
                     <div class="card shadow-sm h-100">
-                        <img src="images/american.jpeg" class="card-img-top" 
-                        style="height: 220px; width: 100%; object-fit: cover;"
-                        alt="American Period">
+                        <img src="images/american.jpeg" class="card-img-top"
+                            style="height: 220px; width: 100%; object-fit: cover;" alt="American Period">
                         <div class="card-body text-center">
                             <h5 class="card-title">1898-1946</h5>
                             <p class="card-subtitle mb-2">American Period</p>
@@ -307,9 +319,8 @@
             <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
                     <div class="card shadow-sm h-100">
-                        <img src="images/japanese.jpeg" class="card-img-top" 
-                        style="height: 220px; width: 100%; object-fit: cover;"
-                        alt="Japanese Occupation">
+                        <img src="images/japanese.jpeg" class="card-img-top"
+                            style="height: 220px; width: 100%; object-fit: cover;" alt="Japanese Occupation">
                         <div class="card-body text-center">
                             <h5 class="card-title">1942-1945</h5>
                             <p class="card-subtitle mb-2">Japanese Occupation</p>
@@ -321,9 +332,8 @@
 
                 <div class="col-md-4">
                     <div class="card shadow-sm h-100">
-                        <img src="images/independence.jpg" class="card-img-top" 
-                        style="height: 220px; width: 100%; object-fit: cover;"
-                        alt="Post-Independence">
+                        <img src="images/independence.jpg" class="card-img-top"
+                            style="height: 220px; width: 100%; object-fit: cover;" alt="Post-Independence">
                         <div class="card-body text-center">
                             <h5 class="card-title">1946-Present</h5>
                             <p class="card-subtitle mb-2">Post-Independence</p>
@@ -357,8 +367,8 @@
                     <!-- Tubbataha Reef -->
                     <div class="carousel-item active">
                         <div class="position-relative shadow-lg rounded" style="height: 80vh; overflow: hidden;">
-                            <img src="images/tubbataha-reefs.jpg" class="d-block w-100 h-100"
-                                style="object-fit: cover;" alt="Tubbataha Reef">
+                            <img src="images/tubbataha-reefs.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
+                                alt="Tubbataha Reef">
                             <div class="carousel-overlay">
                                 <h3>Tubbataha Reef</h3>
                                 <p>A UNESCO World Heritage Site, rich in marine biodiversity in the Sulu Sea.
@@ -413,8 +423,8 @@
                     <!-- Puerto Princesa Underground River -->
                     <div class="carousel-item">
                         <div class="position-relative shadow-lg rounded" style="height: 80vh; overflow: hidden;">
-                            <img src="images/puerto-princesa.jpg" class="d-block w-100 h-100"
-                                style="object-fit: cover;" alt="Puerto Princesa Underground River">
+                            <img src="images/puerto-princesa.jpg" class="d-block w-100 h-100" style="object-fit: cover;"
+                                alt="Puerto Princesa Underground River">
                             <div class="carousel-overlay">
                                 <h3>Puerto Princesa Underground River</h3>
                                 <p>A navigable underground river in Palawan, a natural wonder of limestone
@@ -651,7 +661,6 @@
         <small>Images sourced online</small>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
